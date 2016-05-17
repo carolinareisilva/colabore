@@ -1,1 +1,276 @@
 /* Vazio. Adicione seu próprio CSS se a gosto */
+
+@font-face{
+	font-family: 'Roboto-Light';
+	src: url('../font/Roboto-Light.otf');
+	src: local('Roboto-Light'), url('../font/Roboto-Light.otf') format('truetype');
+}
+
+@font-face{
+	font-family: 'Quenda';
+	src: url('../font/Quenda-Medium.otf');
+	src: local('Quenda'), url('../font/Quenda-Medium.otf') format('truetype');
+}
+
+@font-face{
+	font-family: 'TypoGraphica';
+	src: url('../font/TypoGraphica.otf');
+	src: local('TypoGraphica'), url('../font/TypoGraphica.otf') format('truetype');
+}
+
+.fiscalizar span{
+	font-family: 'Quenda';
+}
+
+.publicar span{
+	font-family: 'Quenda';
+}
+
+.atividades span{
+	font-family: 'Quenda';
+}
+
+.tab-nav{
+	background-color: #A6042D;
+}
+
+.tab-title{
+	color: white;
+}
+
+.ion-ios-eye{
+	color: white;
+}
+
+.ion-ios-camera{
+	color: white;
+}
+
+.ion-ios-chatbubble{
+	color: white;
+}
+
+.ion-ios-eye-outline{
+	color: #DADADA;
+}
+
+.ion-ios-camera-outline{
+	color: #DADADA;
+}
+
+.ion-ios-chatbubble-outline{
+	color: #DADADA;
+}
+
+.header-item{
+	background: #3E3E3E;	
+}
+
+.bar.bar-stable .title{
+	color: white;
+	font-size: 16pt;
+}
+
+.bar-stable .button.button-clear{
+	color: white;
+}
+
+#date-post{
+	color: #A7824B;
+	font-family: 'Roboto-Light';
+}
+
+#date-coments{
+	color: #A7824B;
+	font-family: 'Roboto-Light';
+}
+
+.button-full{
+	background-color: #bc9b69;
+	color: white;
+	font-family: 'Quenda';
+}
+
+.bar-stable.bar-header{
+	background-color: #3E3E3E;
+}
+
+#corpo{
+	background-color: #F2F2F2;
+	padding: 0% 0% 0% 0%;
+}
+
+.comentarios{
+	padding-top: 0.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.item-body a{
+	color: #A6042D;
+}
+
+#ufpe{
+	width: 55px;
+	height: 92px;
+}
+
+#nti{
+	width: 80px;
+	height: 80px;
+}
+
+#footer{
+	text-align: center;
+}
+
+#footer p{
+	font-weight: bold;
+	color: #CCCCCC;	
+	font-size: 8pt;
+	line-height: 37%;
+}
+
+#footer a{
+	color: #CCCCCC;	
+	font-size: 7pt;
+	text-decoration: none;
+}
+
+#footer a:hover{
+	color: grey;
+}
+
+#footer p{
+	font-weight: 1px;
+}
+
+.slider{
+	height: 100%;
+}
+
+.scroll{
+	height: 100%;
+	width: 100%;
+	padding-top: 0px;
+}
+
+.slide1{
+	background-color: #A6042D;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 10%;
+}
+
+.slide1 h1{
+	color: #B48F58;
+	font-family: 'TypoGraphica';
+
+}
+
+.slide1 h4{
+	padding-bottom: 25%;
+	color: #830825;
+	font-family: 'Quenda';
+}
+
+.first-icon{
+	padding-top: 10%;
+	font-size: 195px;
+	color: #830825;
+}
+
+.slide2{
+	background-color: #bc9b69;
+	padding-top: 15%;
+    text-align: center;
+    width: 100%;
+	height: 100%;
+}
+
+.slide2 h3{
+	color: #3E3E3E;
+	font-family: 'Quenda';
+}
+
+.faixa{
+	background-color: #A6042D;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	z-index: -1;
+}
+
+.slide2 p{
+	color: #830825;
+	font-size: 50pt;
+	padding-top: 2%;
+	font-family: 'Quenda';
+}
+
+.slide3{
+	background-color: #3E3E3E;
+	width: 100%;
+	height: 100%;
+}
+
+.slide3 a{
+	text-decoration: none;
+	color: #A6042D;
+	font-family: 'Quenda';
+}
+
+.slide3 h3{
+	color: #A7824B;
+	font-family: 'Quenda';
+}
+
+.box{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	padding-right: 8%;	
+}
+
+.slide3 a:hover{
+	color: #ae1d42;
+}
+
+.slide4{
+	background-color: #E6E6E6;
+	width: 100%;
+	height: 100%;
+}
+
+#text{
+	text-align: justify;
+	color: #545454;
+	padding: 2% 3% 2% 3%;
+	font-family: 'Roboto-Light';
+}
+
+#text a{
+	text-decoration: none;
+}
+
+#text a:link{
+	color: #545454;
+	font-weight: bold;
+}
+
+#text a:visited{
+	color: #545454;
+}
+
+#text a:hover{
+	color: black;
+}
+
+#final-msg{
+	text-align: center;
+	font-family: 'Roboto-Light';
+}
+
+#responsable{
+	font-family: 'Roboto-Light';
+}

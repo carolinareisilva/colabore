@@ -7,11 +7,10 @@
       </label>
     </div>
     <div class="list card" ng-repeat="publicacao in publicacoes">
-
       <div class="item item-avatar">
         <img src="{{publicacao.face}}">
-        <h2>{{publicacao.nome}}</h2>
-        <p>{{publicacao.data}}</p>
+        <h2 id="name-post">{{publicacao.nome}}</h2>
+        <p id="date-post">{{publicacao.data}}</p>
       </div>
       <div class="item item-body">
         <img class="full-image" src="{{publicacao.foto}}">
@@ -19,12 +18,11 @@
           {{publicacao.descricao}}
         </p>
         <p>
-          <a href="#/tab/fiscalizar" class="subdued">1 Apoiador</a>
-          <a href="#/tab/fiscalizar/{{publicacao.id}}" class="subdued">5 Comentários</a>
+          <a href="#/tab/fiscalizar" class="subdued" ng-click="incrementarApoiadores(publicacao.id)">{{publicacao.contadorApoiadores}} Apoiador</a>
+          <a href="#/tab/fiscalizar/{{publicacao.id}}" class="subdued">{{publicacao.listaComentarios.length}} Comentários</a>
           <a href="#/tab/fiscalizar" class="subdued">Divulgar</a>
         </p>
       </div>
-
     </div>
   </ion-content>
 </ion-view>

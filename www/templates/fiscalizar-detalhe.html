@@ -6,21 +6,23 @@
 -->
 <ion-view view-title="{{publicacao.nome}}">
   <ion-content>
-
     <div class="item item-avatar">
       <img src="{{publicacao.face}}">
       <h2>{{publicacao.nome}}</h2>
-      <p>{{publicacao.data}}</p>
+      <p id="date-coments">{{publicacao.data}}</p>
       <img class="full-image" src="{{publicacao.foto}}">
       <p>
         {{publicacao.descricao}}
       </p>
     </div>
     <div class="list">
+      <div class="comentarios" ng-repeat="comentario in publicacao.listaComentarios">
+          <p>{{comentario.descricao}}</p>
+      </div>
       <label class="item item-input">
-        <textarea placeholder="Digite seu comentário"></textarea>
+        <textarea placeholder="Digite seu comentário" ng-model="comentario.descricao"></textarea>
       </label>
-      <button class="button button-full button-positive">
+      <button class="button button-full" ng-click="adicionarComentario(comentario)" ng-disabled="!comentario.descricao">
         Comentar
       </button>
   </ion-content>

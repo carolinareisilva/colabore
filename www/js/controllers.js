@@ -1,8 +1,10 @@
 angular.module('starter.controllers', [])
 
-.controller('PublicarCtrl', function($scope) {})
+.controller('PublicarCtrl', function($scope) {
 
-.controller('FiscalizarCtrl', function($scope, Publicacoes) {
+})
+
+.controller('FiscalizarCtrl', function($scope, $stateParams, Publicacoes) {
   // Com a nova view cache no Ionic, Controllers só são chamados quando eles são 
   // criados ou quando o aplicativo é iniciado, em vez de a cada mudança de página. Para ouvir 
   // quando esta página está ativa (por exemplo, para atualizar os dados), ouvir o 
@@ -10,12 +12,20 @@ angular.module('starter.controllers', [])
   //
   //$scope.$on('$ionicView.enter', function(e) {
   //});
-
-  $scope.publicacoes = Publicacoes.all();
+  $scope.publicacoes = Publicacoes.all();  
+  $scope.incrementarApoiadores = function(publicacaoId){
+    var post = Publicacoes.get(publicacaoId);
+    post.contadorApoiadores++;  
+  };  
 })
 
 .controller('PublicacaoDetailCtrl', function($scope, $stateParams, Publicacoes) {
   $scope.publicacao = Publicacoes.get($stateParams.publicacaoId);
+  
+  $scope.adicionarComentario = function(comentario){
+    $scope.publicacao.listaComentarios.push(angular.copy(comentario));    
+    console.log($scope.comentarios);
+  };    
 })
 
 .controller('AtividadeCtrl', function($scope) {
